@@ -5,8 +5,7 @@ Project Overview
 The research develops two ConvLSTM-based models to predict SSH at the Kuroshio Extension region. The Dual-Attention-ConvLSTM Model (DAM) integrates spatial and temporal attention mechanisms with a novel trend-magnitude loss function. Building upon DAM, the Cascade-Constrained-ConvLSTM Model (CCM) incorporates kinetic energy cascade constraints as physics-informed regularization. Both models are trained on historical climate data (1981-2010) and tested on present (2012-2019) and future greenhouse warming scenarios (2092-2099) to evaluate their climate adaptability.
 
 Repository Structure
-The main training scripts are and for the respective models, while and handle model evaluation and prediction generation. The core model implementations are contained in imported modules, with results and predictions saved to designated output directories.DAM_Train.pyCCM_Train.pyDAM_Test.pyCCM_Test.py
-
+The main training scripts are and for the respective models, while and handle model evaluation and prediction generation. The core model implementations are contained in imported modules, with results and predictions saved to designated output directories.
 Data Requirements
 The models require SSH data in MATLAB format for training, present climate testing, and future climate scenarios. Longitude and latitude grid information is also needed for geostrophic velocity calculations. Users need to update the file paths in the scripts according to their data storage location. The daily SSH data used in this study are available from the World Data Center for Climate at DKRZ (https://doi.org/10.26050/WDCC/C6sCMAWAWM and https://doi.org/10.26050/WDCC/C6sSPAWAWM).
 
